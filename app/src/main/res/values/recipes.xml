@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="recipe_types">
+        <item>Breakfasts</item> //cat id = 1
+        <item>Dinner</item> //cat id = 2
+        <item>Desserts</item> //cat id = 3
+    </string-array>
+
+</resources>

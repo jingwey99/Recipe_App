@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/editButton"
+        android:title=""
+        app:showAsAction="always"
+        android:visible="true"
+        android:icon="@drawable/edit"
+        />
+
+    <item
+        android:id="@+id/saveButton"
+        android:title=""
+        app:showAsAction="always"
+        android:visible="false"
+        android:icon="@drawable/ic_save_black_24dp"
+        />
+</menu>

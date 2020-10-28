@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecipe"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/newRecipeImg"
+        android:layout_width="167dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/newRecipeNameEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/x" />
+
+    <EditText
+        android:id="@+id/newRecipeNameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints="Recipe Name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toEndOf="@id/nameTxv"
+        app:layout_constraintTop_toBottomOf="@+id/newRecipeImg" />
+
+    <Button
+        android:id="@+id/editNewImageBtn"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:drawableStart="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="@+id/newRecipeImg"
+        app:layout_constraintEnd_toEndOf="@+id/newRecipeImg" />
+
+    <Spinner
+        android:id="@+id/catSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newRecipeCodeEt" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catSpinner" />
+
+    <TextView
+        android:id="@+id/nameTxv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Recipe Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newRecipeNameEt" />
+
+    <TextView
+        android:id="@+id/codeTxv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Recipe Code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTxv"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <EditText
+        android:id="@+id/newRecipeCodeEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/codeTxv"
+        app:layout_constraintTop_toTopOf="@+id/codeTxv"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

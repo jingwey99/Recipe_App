@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/deleteRecipeBtn"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title=""
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/addRecipeBtn"
+        android:title=""
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/saveRecipeList"
+        android:title=""
+        android:icon="@drawable/ic_check_white_24dp"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+</menu>
